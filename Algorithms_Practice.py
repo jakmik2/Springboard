@@ -1,9 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
 def do_search(input_array, target_value):
     array_min = 0
     array_max = len(input_array)
@@ -222,26 +216,22 @@ def partition(input_array):
 
 
 def quick_sort2(input_array, r):
-    if r - 1 <= 1:
-        return input_array  # Again, this stinks.
+    if r - 1 > 1:
+        left, pivot, right = partition(input_array)
 
-    left, pivot, right = partition(input_array)
+        left = quick_sort(left)
+        right = quick_sort(right)
 
-    left = quick_sort(left)
-    right = quick_sort(right)
-
-    input_array = left + [pivot] + right
+        input_array = left + [pivot] + right
 
     return input_array
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     array = [9, 7, 5, 11, 12, 2, 14, 3, 10, 6]
     print(array)
     print(quick_sort(array))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
 
 
