@@ -345,4 +345,6 @@ def numerical_to_roman(int_input):
 
 
 if __name__ == '__main__':
-    pass
+    for i in range(0, 1000, 111):
+        print(numerical_to_roman(i))
+
