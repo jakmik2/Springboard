@@ -1,0 +1,4 @@
+Data For Capstone:
+https://www.kaggle.com/datamunge/sign-language-mnist?select=sign_mnist_test
+https://www.kaggle.com/ayuraj/asl-dataset
+https://app.roboflow.com/dataset/american-sign-language-letters-otvmo
